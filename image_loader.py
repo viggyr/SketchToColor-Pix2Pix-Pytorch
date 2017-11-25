@@ -67,7 +67,7 @@ def batches():
     data_transforms_color = tv.transforms.Compose([
 	    tv.transforms.ToTensor(),
 	])
-    paths1=get_model_paths('/media/vignesh/Windows/mini/mini_project/sketch-_to_image/train_data.txt','/media/vignesh/Windows/mini/cs231n_project/screenshot/02958343')
+    paths1=get_model_paths('train_data.txt','/02958343')
     paths2=get_inputs_for_model_paths(paths1)
     edge_path=paths2[0]
     color_path=paths2[1]
