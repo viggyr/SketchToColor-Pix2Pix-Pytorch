@@ -1,5 +1,5 @@
 # Car-Sketch-to-Color-Pix2Pix
-A Pytorch implementation of Sketch to color images generation using CGAN
+A Pytorch implementation of Sketch to color images generation using Pix2Pix architecture
 
 The dataset used is from shapenet. Shapenet contains images of objects in many orientation. For now, only the car dataset has been used
 The data generation process is quite complicated and hence I have made it simpler to use by uploading the dataset I created to my drive
@@ -11,5 +11,6 @@ The model definition is in model.py
 The main file that trains the model is run_sketch2color.py
 
 I have trained the model in aws p2 instance. If you want to train in cpu, remove .cuda() from wherever it has been used and also remove .cpu() inside visdom.images call.
+
 
 
